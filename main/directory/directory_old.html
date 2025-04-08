@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main_page</title>
+	<link rel="stylesheet" href="directory.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+			</label>
+			<h2 class="page-title">Главная</h2>
+			<ul class="menu__box">
+			<h2 class="menu_title">Меню</h2>
+			<hr>
+				<li><a class="menu__item" id="menu_item" href="../main_page/main_page.html"><div class="main_page_menu_img"></div><p>Главная</p></a></li>
+				<li><a class="menu__item" id="menu_item" href="directory.html"><div class="directory_menu_img"></div><p>Справочник</p></a></li>
+				<li><a class="menu__item" id="menu_item" href="../templates/templates.html"><div class="templates_menu_img"></div><p>Шаблоны документов</p></a></li>
+				<li><a class="menu__item" id="menu_item" href="../helpfull_resources/helpfull_resources.html"><div class="helpfull_resoucres_menu_img"></div><p>Полезные ресурсы</p></a></li>
+				<li><a class="menu__item" id="menu_item" href="../news/news.html"><div class="news_menu_img"></div><p>Новости</p></a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<h1 class="page-title-large">Справочник</h1>
+		<div class="grid-container">
+			<!-- <a href="buy_sell/buy_sell.html" class="grid-item">
+				<div id="grid-item-sell" >
+					<h3>Купля-продажа автомобиля</h3>
+				</div>
+			</a> -->
+			<a href="buy_sell/buy_sell.html" class="grid-item">
+				<img src="../assets/buy-sell-directory.svg" alt="Купля-продажа">
+					<span>Купля-продажа автомобиля</span>
+				</div>
+			</a>
+			<a href="care/care.html" class="grid-item">
+				<div id="grid-item-care" >
+					<h3>Забота и эксплуатация авто</h3>
+				</div>
+			</a>
+			<a class="grid-item">	
+				<div id="grid-item-insurance" href="insurance/insurance.html">
+					<h3>Страхование автомобиля и жизни</h3>
+				</div>
+			</a>
+			<a class="grid-item">
+				<div id="grid-item-id" href="id/id.html">
+					<h3>Водительское удостоверение</h3>
+				</div>
+			</a>
+		</div>
+	</main>
+</body>
+</html>

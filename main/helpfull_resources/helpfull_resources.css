@@ -1,0 +1,45 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+}
+
+.resource-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.resource-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.resource-item span {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.resource-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resource-item button:hover {
+    background-color: #cf3a2d;
+}

@@ -1,0 +1,107 @@
+/* .grid-container {
+    margin-top: 10%;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; 
+    width: 80%; 
+    max-width: 800px; 
+    margin: auto;
+} */
+
+/* Стиль каждого элемента грида */
+/* .grid-item {
+    background-color: transparent;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    /* padding: 20px 0 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    text-decoration: none;
+}
+
+
+#grid-item-sell{
+    background-image:url(../assets/buy-sell-directory.svg) ;
+} */
+
+/* Стиль заголовков внутри элементов */
+/* .grid-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #333;
+} */
+
+/* Стиль параграфов внутри элементов */
+/* .grid-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+
+}
+
+.grid-item:hover{
+	box-shadow: 6px 10px 3px -3px #000000;
+	transform: translateY(-10px);
+	cursor: pointer;
+	transition-duration: .5s;
+} */
+
+.circle-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    width: 325px;
+    height: 325px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    filter: invert();
+}
+
+.circle-menu a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.circle-menu a:hover {
+    transform: scale(1.05);
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 140px;
+}
+
+.directory_text{
+    font-size: 18px;
+    padding-top: 25px;
+}
