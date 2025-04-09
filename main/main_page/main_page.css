@@ -21,8 +21,8 @@
 }
 
 .circle-link img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -40,15 +40,12 @@
 }
 
 /* Позиционирование элементов */
-.circle-link:nth-child(1) { /* Первый элемент */
-    grid-column: 2 / span 1; /* Занимает первую колонку */
+.circle-link:nth-child(1) { 
+    grid-column: 1 / span 1; /* Первый элемент в первой колонке */
 }
-.circle-link:nth-child(2) { /* Второй элемент */
-    grid-column: 4 / span 1; /* Занимает третью колонку */
+.circle-link:nth-child(2) { 
+    grid-column: 3 / span 1; /* Второй элемент во второй колонке */
 }
-.circle-link:nth-child(3) { /* Третий элемент */
-    grid-column: 2 / span 1; /* Занимает пятую колонку */
-}
-.circle-link:nth-child(4) { /* Четвертый элемент */
-    grid-column: 4 / span 1; /* Занимает вторую колонку */
+.circle-link:nth-child(3) { 
+    grid-column: 5 / span 1; /* Третий элемент в третьей колонке */
 }

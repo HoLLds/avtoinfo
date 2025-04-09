@@ -30,7 +30,7 @@
     flex-grow: 1;
 }
 
-.resource-item button {
+.button {
     background-color: #e74c3c;
     color: white;
     border: none;
@@ -38,8 +38,9 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
-.resource-item button:hover {
+.button:hover {
     background-color: #cf3a2d;
 }
