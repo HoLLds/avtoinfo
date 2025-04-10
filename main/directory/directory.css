@@ -125,7 +125,7 @@
     padding: 20px;
     border-radius: 10px;
     width: 80%;
-    max-width: 500px; /* Фиксированная максимальная ширина */
+    max-width: 900px; /* Фиксированная максимальная ширина */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation-name: slideIn;
     animation-duration: 0.5s;
@@ -160,10 +160,10 @@
 }
 
 /* закоментить чтобы посмотреть стоковый текст, он вроде классно выглядит, но маленький */
-/* .modal-content h2{
+.modal-content h2{
     font-size: 50px;
 }
 
 .modal-content p{
-    font-size: 30px; */
+    font-size: 30px;
 }
