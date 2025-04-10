@@ -134,6 +134,12 @@
     overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
 }
 
+.modal-content p{
+text-indent: 20px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -164,6 +170,6 @@
     font-size: 50px;
 }
 
-.modal-content p{
+/* .modal-content p{
     font-size: 30px;
-}
+} */
