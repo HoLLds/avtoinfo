@@ -18,7 +18,7 @@ body{
 	display: flex;
     justify-content: center;
 	padding: 0%;
-	background: linear-gradient(90deg, #571a1e 25%, #435565 75%);
+	background: #2f2f2f
 	/* background: linear-gradient(90deg, #8174A0, #A888B5); */
 	/* height: auto; */
 }
@@ -27,7 +27,7 @@ main{
 	width: 100%;
 	margin-left: 300px;	
 	height: auto;
-	color: #ffffff;
+	color: #f9f9f9;
 }
 
 /* ОСНОВНАЯ ИНФОРМАЦИЯ */
@@ -41,26 +41,28 @@ main{
 .page-title-large{
 	font-size: 100px;
 	text-transform: uppercase;
-	padding: 180px 0px 70px 50px;
+	padding: 70px 0px 55px 50px;
 }
 
 .text_stroke{
 	color: transparent;
-	-webkit-text-stroke: 2px white;
+	-webkit-text-stroke: 2px #F9F9F9;
 }
 
 .page-title-small{
 	font-size: 40px;
-	/* padding-left: 50px;
-	padding-top: 30px; */
-	padding: 30px 0 30px 50px;
+	padding: 15px 0 15px 50px;
 }
 
 .page-text{
-	padding: 15px 0 15px 0;
+	padding: 15px 0 15px 50px;
 	font-size: 25px;
-	padding-left: 50px;
+	color: #C9B7A2;
+	max-width: 1480px;
+}
 
+#page-text-add{
+	padding: 15px 0 15px 70px;
 }
 
 .page-text-list{
@@ -105,14 +107,12 @@ main{
 .menu__box {
 	display: block;
 	position: sticky;
-	border-right: 3px solid #000000;
+	/* border-right: 3px solid #000000; */
 	width: 300px;
 	height: 100%;
 	list-style: none;
 	text-align: center;
-	background-color: #1b1b1b;
-	color: gray;
-	
+	background-color: #242424;	
 }
 
 #menu_item{
@@ -126,17 +126,17 @@ main{
 	font-weight: 600;
 	text-decoration: none;
 	text-align: center;
-	color: #c2cbdc;
+	color: #C9B7A2;
 }
+
+
 
 .menu__item p{
 	margin-left: 15px;
 }
 
 .menu__item:hover {
-	/* background-color: #d3d4d4; */
-	background-color: #0e1c26;
-	color: white;
+	background-color: #3B2E28;
 }
 
 .menu_title{
@@ -183,12 +183,12 @@ main{
 
 .helpfull_resoucres_menu_img{
 	background-image: url(assets/resouces.png);
-	filter: invert();
 	background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
   width: 30px;
   height: 30px;
+  color: #A67C52;
 }
 
 .news_menu_img{

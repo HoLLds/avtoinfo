@@ -1,28 +1,38 @@
-/* Стили для общего контейнера */
-.container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Пять равных колонок */
-    gap: 15px; /* Пространство между элементами */
-    justify-content: center; /* Выравнивание по горизонтали */
-    align-items: center; /* Выравнивание по вертикали */
-    padding: 20px;
-    height: 100vh;
-	margin-left: 50px;
+/* Стили для нового контейнера */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Размещает элементы по краям */
+    align-items: flex-start; /* Выравнивает по верхнему краю */
+    margin-top: 20px; /* Отступ сверху */
 }
 
-/* Стили для круглых гиперссылок */
+/* Секция с текстом */
+.text-section {
+    flex: 1; /* Занимает доступное пространство */
+    margin-right: 50px; /* Отступ между текстом и кружочками */
+}
+
+/* Контейнер для круглых гиперссылок */
+.circle-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Пространство между кружочками */
+    margin-right: 50px;
+}
+
+/* Остальные стили остаются неизменными */
 .circle-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: black; /* Цвет текста (можно изменить) */
+    color: #ffffff;
     transition: transform 0.3s ease;
 }
 
 .circle-link img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -34,18 +44,17 @@
     font-weight: bold;
 }
 
-/* Анимация при наведении */
 .circle-link:hover {
     transform: scale(1.1);
 }
 
-/* Позиционирование элементов */
-.circle-link:nth-child(1) { 
-    grid-column: 1 / span 1; /* Первый элемент в первой колонке */
+main, .content-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.circle-link:nth-child(2) { 
-    grid-column: 3 / span 1; /* Второй элемент во второй колонке */
-}
-.circle-link:nth-child(3) { 
-    grid-column: 5 / span 1; /* Третий элемент в третьей колонке */
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
