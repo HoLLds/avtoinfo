@@ -166,10 +166,15 @@ margin-bottom: 10px;
 }
 
 /* закоментить чтобы посмотреть стоковый текст, он вроде классно выглядит, но маленький */
-.modal-content h2{
-    font-size: 50px;
-}
-
-/* .modal-content p{
+.modal-content h2 {
     font-size: 30px;
-} */
+    text-align: center;
+    padding-bottom: 20px;
+}   
+
+.modal-content p {
+    text-indent: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
