@@ -6,11 +6,13 @@ const modals = document.querySelectorAll('.modal');
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.style.display = 'block';
+    document.body.classList.add('no-scroll');
 }
 
 // Функция для закрытия модального окна
 function closeModal(modal) {
     modal.style.display = 'none';
+    document.body.classList.remove('no-scroll');
 }
 
 // Добавляем обработчики событий для кругов
@@ -36,3 +38,8 @@ modals.forEach(modal => {
         }
     });
 });
+
+// Открытие модального окна
+
+
+// Закрытие модального окна

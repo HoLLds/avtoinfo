@@ -6,6 +6,10 @@
 	/* box-sizing: border-box; */
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 body{
 	font-family: 'Titillium Web', sans-serif;
 	display: flex;
