@@ -8,27 +8,33 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-		<div class="hamburger-menu">
-			<input id="menu__toggle" type="checkbox" />
-			<label class="menu__btn" for="menu__toggle">
-				<span></span>
-			</label>
-
-			<h2 class="page-title">Главная</h2>
-			<ul class="menu__box">
-			<h2 class="menu_title">Меню</h2>
-
-			<hr>
-				<li><a class="menu__item" id="menu_item" href="../index.html"><div class="main_page_menu_img"></div><p>Главная</p></a></li>
-				<li><a class="menu__item" id="menu_item" href="directory.html"><div class="directory_menu_img"></div><p>Справочник</p></a></li>
-				<li><a class="menu__item" id="menu_item" href="../templates/templates.html"><div class="templates_menu_img"></div><p>Шаблоны документов</p></a></li>
-				<li><a class="menu__item" id="menu_item" href="../helpfull_resources/helpfull_resources.html"><div class="helpfull_resoucres_menu_img"></div><p>Полезные ресурсы</p></a></li>
-			</ul>
-		</div>
-	</header>
+    <!-- Десктопное вертикальное меню -->
+    <nav class="desktop-menu">
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../directory/directory.html">Справочник</a></li>
+            <li><a href="../templates/templates.html">Шаблоны документов</a></li>
+            <li><a href="../helpfull_resources/helpfull_resources.html">Полезные ресурсы</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Мобильная шапка -->
+    <div class="mobile-header">
+        <span class="mobile-header-name">Справочник</span>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger"></label>
+        <nav class="mobile-menu">
+            <ul class="menu-list">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../directory/directory.html">Справочник</a></li>
+                <li><a href="../templates/templates.html">Шаблоны документов</a></li>
+                <li><a href="../helpfull_resources/helpfull_resources.html">Полезные ресурсы</a></li>
+            </ul>
+        </nav>
+    </div>
+	<!-- Мобильная панель навигации -->
+	<!-- Основной контент -->
     <main>
-
         <h1 class="page-title-large">Справочник</h1>
         <!-- <p class="page-text">Здесь предоставлена важная информация по ключевым аспектам <br>владения автомобилем и обеспечения безопасности на дороге.</p> -->
         <div class="circle-menu">

@@ -4,6 +4,10 @@
     padding: 20px;
 }
 
+.resource-text{
+    flex-grow: 1;
+    color: #C9B7A2;
+}
 .resource-list {
     display: flex;
     flex-direction: column;
@@ -16,13 +20,13 @@
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     padding: 15px 0;
+    gap: 10px;
 }
 
 .resource-item img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
 }
 
 .resource-item span {
@@ -35,7 +39,7 @@
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
@@ -43,4 +47,28 @@
 
 .button:hover {
     background-color: #b24318;
+}
+
+@media (max-width: 600px) {
+    .resource-list{
+        padding: 0 20px 0 25px;
+    }
+
+    .resource-item img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .resource-item span{
+        font-size: 15px;
+    }
+
+    .resource-item a{
+        font-size: 10px;
+    }
+
+    .button{
+        padding: 5px 5px;
+    }
+
 }

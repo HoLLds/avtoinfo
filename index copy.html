@@ -8,34 +8,18 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Десктопное вертикальное меню -->
-    <nav class="desktop-menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="../directory/directory.html">Справочник</a></li>
-            <li><a href="../templates/templates.html">Шаблоны документов</a></li>
-            <li><a href="../helpfull_resources/helpfull_resources.html">Полезные ресурсы</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Мобильная шапка -->
-    <div class="mobile-header">
-		<span class="mobile-header-name">ГЛАВНАЯ</span>
-        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-        <label for="burger-checkbox" class="burger"></label>
-        <nav class="mobile-menu">
-            <ul class="menu-list">
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../directory/directory.html">Справочник</a></li>
-                <li><a href="../templates/templates.html">Шаблоны документов</a></li>
-                <li><a href="../helpfull_resources/helpfull_resources.html">Полезные ресурсы</a></li>
-            </ul>
-        </nav>
-    </div>
-	<!-- Мобильная панель навигации -->
+    <!-- Мобильная панель навигации -->
+		<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+		<label for="burger-checkbox" class="burger"></label>
+		<ul class="menu-list">
+			<li><a href="index.html" class="menu-item">Главная</a></li>
+			<li><a href="directory/directory.html" class="menu-item">Справочник</a></li>
+			<li><a href="#templates" class="menu-item">Шаблоны документов</a></li>
+			<li><a href="#resources" class="menu-item">Полезные ресурсы</a></li>
+		</ul>
 	<!-- Основной контент -->
 	<main>
-		<h1 class="page-title-large">Профессиональный опыт, <a class="text_stroke">собранный вместе</a></h1>
+		<h1 class="page-title-large">Мы объединили в себе опыт <a class="text_stroke">профессионалов</a></h1>
 		<div class="content-container">
 			<div class="text-section">
 				<h2 class="page-title-small boldtext">Что вы можете здесь найти?</h2>
@@ -69,13 +53,13 @@
 		</div>
 	</main>
 	<script src="main_page/main_page_script.js"></script>
-	<!-- <script>
+	<script>
         const menuToggle = document.getElementById('menu-toggle');
         const sidebar = document.getElementById('sidebar');
 
         menuToggle.addEventListener('click', () => {
             sidebar.classList.toggle('active');
         });
-    </script> -->
+    </script>
 </body>
 </html>

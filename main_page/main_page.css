@@ -10,6 +10,7 @@
 .text-section {
     flex: 1; /* Занимает доступное пространство */
     margin-right: 50px; /* Отступ между текстом и кружочками */
+	max-width: 800px;
 }
 
 /* Контейнер для круглых гиперссылок */
@@ -57,4 +58,90 @@ main, .content-container {
 .visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.page-text-list{
+    margin-left: 70px;
+}
+
+.page-text-list li{
+	padding: 10px 0 10px 0;
+	font-size: 25px;
+	color: #C9B7A2;
+}
+
+/* Адаптивность tablet*/
+@media (max-width: 1024px) {
+	.circle-link img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.circle-link span {
+		margin-top: 10px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.circle-links-container {
+		gap: 90px; /* Пространство между кружочками */
+	}
+
+	.content-container{
+		margin-top: 0;
+	}
+
+	.page-text-list li{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-text-list{
+		margin-left: 50px;
+	}
+	.page-text-list li{
+		font-size: 15px;
+    }
+
+	.circle-links-container{
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		margin: 30px 50px 0 50px;
+	}
+	.circle-link img{
+		width: 80px;
+		height: 80px;
+	}
+	.content-container {
+		display: flex;
+		flex-direction: column ;
+
+	}
+}
+
+@media (max-width: 360px){
+    .page-text-list li{
+		font-size: 15px;
+    }
+
+	.circle-links-container{
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		margin: 30px 50px 0 15px;
+	}
+	.circle-link img{
+		width: 60px;
+		height: 60px;
+	}
+	.content-container {
+		display: flex;
+		flex-direction: column ;
+
+	}
 }

@@ -8,50 +8,58 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-		<div class="hamburger-menu">
-			<input id="menu__toggle" type="checkbox" />
-			<label class="menu__btn" for="menu__toggle">
-				<span></span>
-			</label>
-			<h2 class="page-title">Главная</h2>
-			<ul class="menu__box">
-			<h2 class="menu_title">Меню</h2>
-			<hr>
-				<li><a class="menu__item" id="menu_item" href="../index.html"><div class="main_page_menu_img"></div><p>Главная</p></a></li>
-				<li><a class="menu__item" id="menu_item" href="../directory/directory.html"><div class="directory_menu_img"></div><p>Справочник</p></a></li>
-				<li><a class="menu__item" id="menu_item" href="../templates/templates.html"><div class="templates_menu_img"></div><p>Шаблоны документов</p></a></li>
-				<li><a class="menu__item" id="menu_item" href="../helpfull_resources/helpfull_resources.html"><div class="helpfull_resoucres_menu_img"></div><p>Полезные ресурсы</p></a></li>
-			</ul>
-		</div>
-	</header>
+    <!-- Десктопное вертикальное меню -->
+    <nav class="desktop-menu">
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../directory/directory.html">Справочник</a></li>
+            <li><a href="../templates/templates.html">Шаблоны документов</a></li>
+            <li><a href="../helpfull_resources/helpfull_resources.html">Полезные ресурсы</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Мобильная шапка -->
+    <div class="mobile-header">
+        <span class="mobile-header-name">Полезные ресурсы</span>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger"></label>
+        <nav class="mobile-menu">
+            <ul class="menu-list">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../directory/directory.html">Справочник</a></li>
+                <li><a href="../templates/templates.html">Шаблоны документов</a></li>
+                <li><a href="../helpfull_resources/helpfull_resources.html">Полезные ресурсы</a></li>
+            </ul>
+        </nav>
+    </div>
+	<!-- Мобильная панель навигации -->
 	<main>
 		<h1 class="page-title-large">Ресурсы</h1>
 		<p class="page-text">В данном разделе Вы найдете полезные ресурсы, которые мы подобрали специально для Вас!</p>
         <div class="resource-list">
             <div class="resource-item">
                 <img src="assets/mvd.svg" alt="ГИБДД МВД России">
-                <span>Официальный сайт ГИБДД МВД России</span>
+                <p class="resource-text">Официальный сайт ГИБДД МВД России</p>
                 <a href="https://xn--80aebkobnwfcnsfk1e0h.xn--p1ai/" class="button" target="_blank">Перейти</a>
             </div>
             <div class="resource-item">
                 <img src="assets/gosuslugi.ru.svg" alt="Портал государственных услуг">
-                <span>Портал государственных услуг Российской Федерации</span>
+                <p class="resource-text">Портал государственных услуг Российской Федерации</p>
                 <a href="https://www.gosuslugi.ru/" class="button" target="_blank">Перейти</a>
             </div>
             <div class="resource-item">
                 <img src="assets/Avtocod.svg" alt="Автокод">
-                <span>Информационно-поисковый портал "Автокод"</span>
+                <p class="resource-text">Информационно-поисковый портал "Автокод"</p>
                 <a href="https://avtocod.ru/" class="button" target="_blank">Перейти</a>
             </div>
             <div class="resource-item">
                 <img src="assets/rsa.jpg" alt="Росавтострах">
-                <span>Сайт Российского союза автостраховщиков</span>
+                <p class="resource-text">Сайт Российского союза автостраховщиков</p>
                 <a href="https://autoins.ru/" class="button" target="_blank"ton>Перейти</a>
             </div>
             <div class="resource-item">
                 <img src="assets/autonews.png" alt="Автоновости">
-                <span>Автоновости</span>
+                <p class="resource-text">Автоновости</p>
                 <a href="https://www.autonews.ru/" class="button" target="_blank">Перейти</a>
             </div>
             </div>
