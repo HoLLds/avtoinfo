@@ -79,6 +79,7 @@
     max-height: 80vh; /* Максимальная высота */
     overflow-y: auto; /* Вертикальная прокрутка */
     overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    
 }
 
 .modal-content p{
@@ -125,6 +126,20 @@ margin-bottom: 10px;
     font-size: 18px;
 }
 
+.modal-subtitle{
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-content ul{
+    margin-left: 20px;
+}
+
+.modal-content li{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 @media (max-width:1440px){
     .circle-menu {
         display: flex;

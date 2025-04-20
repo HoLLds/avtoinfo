@@ -17,7 +17,7 @@
     line-height: 1.6;
     margin: 0; 
     padding: 0;
-    max-width: 900px;
+    max-width: 500px;
     color: #C9B7A2;
 }
 
@@ -45,6 +45,7 @@
     display: flex;
     gap: 10px;
     padding-top: 0;
+    max-width: fit-content;
 }
 
 .download-link {
