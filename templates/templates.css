@@ -26,6 +26,7 @@
 }
 
 /* Колонки */
+
 .columns {
     display: flex;
     gap: 40px;
@@ -66,9 +67,14 @@
     margin: 20px auto;
 }
 
+/* МАСШТАБИРОВАНИЕ */
+
 @media (max-width: 1440px) {
     .page-title-small{
         font-size: 18px;
+    }
+    .page-title-large{
+        display: none;
     }
     .page-text-tempaltes{
         font-size: 15px;
@@ -90,10 +96,18 @@
     }
 }
 
+@media (max-width: 1024px){
+    .page-title-large{
+        display: none;
+    }
+    
+}
+
 @media (max-width: 480px) {
     .page-title-large{
         display: none;
     }
+
 
     .templates-name{
         color: white;

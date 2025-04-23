@@ -1,3 +1,10 @@
+.page-title-large{
+    padding: 40px 0 20px 50px !important;
+}
+
+
+/* КНОПКИ */
+
 .circle-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -9,11 +16,11 @@
 
 .circle-item {
     display: flex;
-    flex-direction: row;         /* Меняем с column на row */
-    align-items: center;         /* Центрируем по вертикали */
+    flex-direction: row;
+    align-items: center;
     padding: 20px;
-    gap: 20px;                   /* Отступ между иконкой и текстом */
-    text-align:  right;            /* Текст теперь слева */
+    gap: 20px;
+    text-align:  right;
     color: white;
     width: 90%;
     height: 250px;
@@ -34,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;  /* Чтобы не сжималась */
+    flex-shrink: 0; 
     margin-left: 25px;
 }
 
@@ -46,14 +53,16 @@
 }
 
 .directory_text {
-    flex: 1;               /* Занимает всё оставшееся пространство */
+    flex: 1; 
     font-size: 25px;
     line-height: 1.4;
     text-align: center;
 }
 
+/* МОДАЛЬНЫЕ ОКНА */
+
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none; 
     position: fixed;
     z-index: 999;
     left: 0;
@@ -66,27 +75,21 @@
 }
 
 .modal-content {
-    /* background-color: rgb(204, 99, 99); */
     background-color: #2f2f2f;
     margin: 10% auto;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
-    max-width: 900px; /* Фиксированная максимальная ширина */
+    max-width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation-name: slideIn;
     animation-duration: 0.5s;
-    max-height: 80vh; /* Максимальная высота */
-    overflow-y: auto; /* Вертикальная прокрутка */
-    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
-    
+    max-height: 80vh; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
 }
 
-.modal-content p{
-text-indent: 20px;
-margin-top: 5px;
-margin-bottom: 10px;
-}
+/* МАСШТАБИРОВАНИЕ */
 
 @keyframes slideIn {
     from {
@@ -112,7 +115,6 @@ margin-bottom: 10px;
     cursor: pointer;
 }
 
-/* закоментить чтобы посмотреть стоковый текст, он вроде классно выглядит, но маленький */
 .modal-content h2 {
     font-size: 30px;
     text-align: center;
@@ -142,12 +144,12 @@ margin-bottom: 10px;
 }
 @media (max-width:1440px){
     .circle-menu {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 20px;
+        /* display: flex;
+        flex-direction: column; */
+        padding: 80px 20px;
         justify-items: center;
     }
-    
+
     .circle-item {
         display: flex;
         flex-direction: row;
@@ -157,27 +159,63 @@ margin-bottom: 10px;
     }
 
     .directory_text {
-        flex: 1;    
-        font-size: 20px;
+        flex: 1;
         line-height: 1.4;
         text-align: center;
     }
-    /* .icon{
-        width: 120px;
-        height: 120px;
-    } */
-}
 
+    .page-title-large{
+        display: none;
+    }
+}
+@media (max-width:1024px){
+
+    .circle-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .page-title-large{
+        display: none;
+    }
+
+    .circle-menu {
+        padding: 100px 0 0 0;
+    }
+
+    .circle-item{
+        height: 150px;
+    }
+}
 @media (max-width:1000px){
     .icon{
         width: 120px;
         height: 120px;
     }
+    .page-title-large{
+        display: none;
+    }
+    .circle-item{
+        height: 100px;
+    }
+    .circle-menu {
+        padding: 100px 0 0 0;
+    }
+}    
+
+@media(max-width:800px){
+
 }
 
 @media (max-width:480px){
     .icon{
-        width: 100px;
-        height: 100px;
+        width: 25%;
+        height: 80%;
+    }
+    .circle-menu {
+        padding: 80px 10px 0 10px;
+        font-size: 12px;
+    }
+    .directory_text{
+        font-size: 18px;
     }
 }

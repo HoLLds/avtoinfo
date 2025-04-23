@@ -3,7 +3,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
 }
 
 .no-scroll {
@@ -11,18 +10,16 @@
 }
 
 body{
-	font-family: 'Titillium Web', sans-serif;
+    font-family: "Geologica", sans-serif;
 	color: #000000;
-	/* height: 100vh; */
 	display: flex;
     justify-content: center;
 	padding: 0%;
 	background: #2f2f2f
-	/* background: linear-gradient(90deg, #8174A0, #A888B5); */
-	/* height: auto; */
+    
+
 }
 
-/* ЕБАНОЕ МНЮ */
         .desktop-menu {
             width: 300px;
             background: #242424;
@@ -201,39 +198,6 @@ body{
             background-color: #ccc; /* Цвет фона заглушки */
             border-radius: 4px; /* Скругление углов (опционально) */
         }
-        
-        /* Адаптация под мобильные */
-        @media (max-width: 1024px) {
-            .desktop-menu {
-                display: none;
-            }
-            
-            .mobile-header {
-                display: block;
-            }
-            
-            .content {
-                margin-left: 0;
-                padding-top: 90px;
-            }
-        }
-
-
-
-/* Адаптация под мобильные */
-@media (max-width: 768px) {
-	.desktop-menu {
-		display: none;
-	}
-	
-	.mobile-header {
-		display: block;
-	}
-	
-	body {
-		padding-top: 70px;
-	}
-}
 
 /* Контент страницы */
 .content {
@@ -252,7 +216,6 @@ body{
 	pointer-events: none; /* Чтобы можно было кликать сквозь текст */
 	text-transform: uppercase;
 }
-
 
 
 /* ЕБАНОЕ МНЮ */
@@ -280,7 +243,7 @@ main{
 
 .text_stroke{
 	color: transparent;
-	-webkit-text-stroke: 2px #F9F9F9;
+	-webkit-text-stroke: 1px #F9F9F9;
 }
 
 .page-title-small{
@@ -296,90 +259,13 @@ main{
 	max-width: 1480px;
 }
 
-
-/* КОНЕЦ ОСНОВНОЙ ИНФОРМАЦИИ */
-
-/* .mobile-header {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-	background: rgba(255,255,255,0.35);
-	-webkit-backdrop-filter: blur(3px);
-	backdrop-filter: blur(3px);
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    z-index: 999;
-}
-
-.mobile-header button {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.mobile-header span {
-    font-size: 16px;
-} */
-
-/* Сайдбар (меню) */
-#sidebar {
-	align-items: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background-color: #333;
-    transition: all 0.3s ease;
-    overflow-y: auto;
-    z-index: 998;
-}
-
-#sidebar.active {
-    left: 0; /* Открывается при клике */
-}
-
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-
-}
-
-#sidebar ul li {
-    padding: 30px 20px;
-    border-bottom: 1px solid #444;
-}
-
-#sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-#sidebar ul li a i {
-    margin-right: 10px;
-}
-
-/* полоса прокуртки */
-
 ::-webkit-scrollbar {
 	width: 0;
   }
 @media (max-width: 1440px) {
 	.page-title-large{
-		font-size: 35px;
 		text-transform: uppercase;
+        padding: 60px 0 20px 50px;
 	}
 
 	.page-title-small{
@@ -389,11 +275,28 @@ main{
 	.page-text{
 		font-size: 20px;
 	}
+
+    .desktop-menu {
+        display: none;
+    }
+    
+    .mobile-header {
+        display: block;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding-top: 90px;
+    }
+    main{
+        margin-left: 0;
+    }
+
+    .page-text-mobile{
+        font-size: 20px;
+        padding-top: 70px !important;
+    }
 }
-
-
-
-
 
 /* Адаптивность tablet*/
 @media (max-width: 1024px) {
@@ -412,13 +315,14 @@ main{
     }
 	/* Основная инф */
     main {
-		margin: 0;
+		margin: auto;
 
     }
 
 	.page-title-large{
 		font-size: 50px;
 		text-transform: uppercase;
+        padding: 64px 0 20px 50px;
 	}
 
 	.page-title-small{
@@ -429,6 +333,18 @@ main{
 		font-size: 20px;
 	}
 }
+
+@media (max-width: 768px){
+    .desktop-menu {
+		display: none;
+	}
+	
+	.mobile-header {
+		display: block;
+	}
+}
+
+
  /* Адаптивность phone */
 @media (max-width: 600px) {
 	main {
@@ -443,7 +359,7 @@ main{
 	.page-title-large{
 		font-size: 25px;
 		text-transform: uppercase;
-		padding: 0 0 0 25px;
+		padding: 100px 0 0 25px;
 	}
 
 	.page-title-small{
@@ -453,7 +369,7 @@ main{
 
 	.page-text{
 		font-size: 15px;
-		padding: 10px 20px 0 25px;
+        padding: 20px 0 15px 25px;
 	}
 }
 

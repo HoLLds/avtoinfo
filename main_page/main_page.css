@@ -1,27 +1,25 @@
-/* Стили для нового контейнера */
 .content-container {
     display: flex;
-    justify-content: space-between; /* Размещает элементы по краям */
-    align-items: flex-start; /* Выравнивает по верхнему краю */
-    margin-top: 20px; /* Отступ сверху */
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px; 
 }
 
-/* Секция с текстом */
+
 .text-section {
-    flex: 1; /* Занимает доступное пространство */
-    margin-right: 50px; /* Отступ между текстом и кружочками */
+    flex: 1; 
+    margin-right: 50px; 
 	max-width: 800px;
 }
 
-/* Контейнер для круглых гиперссылок */
+
 .circle-links-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Пространство между кружочками */
+    gap: 20px;
     margin-right: 50px;
 }
 
-/* Остальные стили остаются неизменными */
 .circle-link {
     display: flex;
     flex-direction: column;
@@ -61,16 +59,136 @@ main, .content-container {
 }
 
 .page-text-list{
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 .page-text-list li{
 	padding: 10px 0 10px 0;
 	font-size: 25px;
 	color: #C9B7A2;
+	cursor: pointer;
+	transition: 0.4s;
+	padding-left: 1em
 }
 
-/* Адаптивность tablet*/
+.page-text-list li::before{
+	content: "•"; /* Символ точки */
+	position: absolute;
+	left: 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #2f2f2f;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    max-height: 80vh;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+/* АНИМАЦИИ ТЕКСТА */
+
+.hover-underline-animation.center::after {
+    transform-origin: bottom center;
+  }
+  
+  .hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover{
+    color: #fff;
+    transition: 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+	transform: scaleX(1);
+  }
+  
+/* МАСШТАБИРОВАНИЕ */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+	color: #f9f9f9;
+}   
+
+.modal-content p {
+    text-indent: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+	color: #f9f9f9
+}
+
+.modal-subtitle{
+    font-weight: bold;
+    text-align: center;
+}
+/* МАСШТАБИРОВАНИЕ */
 @media (max-width: 1024px) {
 	.circle-link img {
 		width: 100px;
@@ -87,7 +205,7 @@ main, .content-container {
 	}
 
 	.circle-links-container {
-		gap: 90px; /* Пространство между кружочками */
+		gap: 90px;
 	}
 
 	.content-container{
@@ -97,6 +215,9 @@ main, .content-container {
 	.page-text-list li{
 		font-size: 20px;
 	}
+    .page-text {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -113,15 +234,17 @@ main, .content-container {
 		gap: 30px;
 		margin: 30px 50px 0 50px;
 	}
+
 	.circle-link img{
 		width: 80px;
 		height: 80px;
 	}
+
 	.content-container {
 		display: flex;
 		flex-direction: column ;
-
 	}
+
 }
 
 @media (max-width: 360px){
@@ -142,6 +265,15 @@ main, .content-container {
 	.content-container {
 		display: flex;
 		flex-direction: column ;
-
 	}
+
+    .page-title-large{
+        padding-top: 100px;
+    }
 }
+
+
+
+
+
+  
